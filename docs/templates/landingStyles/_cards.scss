@@ -1,0 +1,39 @@
+.card{
+    background-color: $HeavyColor;
+    border-bottom: 1px solid #fff;
+    .container{
+        display: grid;
+        grid-template-columns: 30% 55% 15%;
+        align-items: center;
+        padding: 40px 0;
+    }
+}
+.benefit{
+    display: flex;
+    align-items: center;
+    grid-column: 1/2;
+    h1{
+        margin-left: 10px;
+        color: $ContentColor;
+    }
+    img{
+        width: 64px;
+        height: 64px;
+    }
+}
+.card-text{
+    margin: 0 auto;
+    width: 450px;
+    color: $ContentColor;
+    grid-column: 2/3;
+}
+.included-block{
+    grid-column: 3/4;
+    h1{
+        width: fit-content;
+        margin-left: auto;
+        color: rgb(29, 212, 29);
+        border-left: 1px solid rgb(29, 212, 29);
+        padding-left: 10px;
+    }
+}

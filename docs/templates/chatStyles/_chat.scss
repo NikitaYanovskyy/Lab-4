@@ -1,0 +1,117 @@
+.chat-section{
+    display: flex;
+    height: 100vh;
+}
+.chat-active{
+    background-color: rgb(224, 224, 224);
+}
+.chat-people{
+    flex: 40%;
+    height: fit-content;
+    ///p
+    .nickname{
+        font-weight: bold;
+    }
+    .message-text-date{
+        color: #8d8d8d;
+        font-size: 14px;
+    }
+    .chat-photo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .person{
+        padding: 15px 20px 15px 10px;
+        display: flex;
+        align-items: center;
+    }
+    .message-info{
+        .name-new-message{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .new-message{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .message-text-date{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.chat-messanger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 60%;
+    box-shadow: -7px -1px 6px -5px rgba(99,99,99,1);
+}
+.absolute-date{
+    position: absolute;
+    left: 50px;
+    bottom: -25px;
+    background-color: transparent !important;
+    padding: 0 !important;
+}
+.person-to-block{
+    margin: 20px 0 0 20px;
+}
+.messages{
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    overflow-y: scroll;
+    margin:0  10px;
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    p{
+        padding: 5px 10px;
+        border-radius: 4px;
+        background-color: rgb(194, 194, 194);
+    }
+}
+.chat-message{
+    margin: 40px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.message-right{
+    margin-right: auto;
+}
+.message-left{
+    margin-left: auto;
+}
+.message-type{
+    display: flex;
+    justify-content: space-between;
+    img{
+        cursor: pointer;
+        margin: 15px 20px 0 0;
+        width: 25px;
+        height: 25px;
+    }
+    background-color: rgb(238, 238, 238);
+    textarea{
+        padding: 20px 0 0 20px;
+        background-color: rgb(238, 238, 238);
+        resize: none;
+        width: 70%;
+        height: 70px;
+    }
+}

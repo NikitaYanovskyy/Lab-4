@@ -1,0 +1,58 @@
+.more-about-us-wrapper{
+    background-color: #eeeeee;
+    position: relative;
+    width: 100%;
+}
+.more-about-us-wrapper:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: -5%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: inherit;
+    transform-origin: top left;
+    transform: skewY(-2deg);
+}
+.more-about-us{
+    padding: 100px 0;
+}
+//////////////////////////////////////////////////////Cards
+.about-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.about-card{
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: $HeavyColor;
+    border: 1px solid #000;
+    h3{
+        color: #fff;
+    }
+    img{
+        margin-right: 20px;
+    }
+}
+//////////////////////////////////////////////////////Get Started
+.get-started{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a{
+        display: block;
+        background-color: $HeavyColor;
+        border: 1px solid #000;
+        padding: 10px 60px;
+        color: #fff;
+    }
+    p{
+        color: #7d7d7d;
+    }
+}
